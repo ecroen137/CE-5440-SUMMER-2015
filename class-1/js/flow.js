@@ -10,5 +10,7 @@ var a = 10,
         console.log(b + " is greater than " + a);
     } else if (c === c) {
         console.log(c + " is equal to " + c);
+    } else {
+        console.log('confused');
     }
     
