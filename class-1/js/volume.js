@@ -4,4 +4,7 @@ var height = 20
 
 var volume = length * width * height;
 
-console.log(volume);
+//console.log(volume);
+
+var myMax = Math.max(2, 4);
+console.log(myMax);
