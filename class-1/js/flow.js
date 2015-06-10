@@ -2,8 +2,9 @@ var a = 10,
     b = 20,
     c = 30,
     d = 40;
+
     
-    
+   
     if(b < a) {
         console.log(b + " is less than " + a);
     } else if (b > a) {
