@@ -1,0 +1,30 @@
+<script type="text/javascript" 
+   src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+       $(document).ready(function() {
+            $('.my-button').bind('click', function( event ){
+                var input = $('.my-input').val();
+               $('.my-output').html(input);
+            });
+        });
+
+   </script>
+   <style>
+       .my-button {
+           height: 50px;
+           width: 100px;
+           color: #fff;
+           background-color:blue;
+           cursor: pointer;
+       }   
+  </style>
+</head>
+<body>
+   <input type="text" class="my-input" value="">
+   <br>
+   <div class="my-button">Click Here</div>
+   <br>
+   <div class="my-output"></div>
+</body>
+</html>
