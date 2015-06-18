@@ -10,7 +10,7 @@ $(document).ready(function(){
     // appending inside
     $.each(reallyLongArray, function (count, item) {
         var newLI = '<li>' + item + '</li>';
-        $('#main').append("<ul>" + newLI + "</ul>");
+        $('#teams').append(newLI);
     });
 
     // string concatenate and set innerHTML
