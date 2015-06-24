@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Validator</title>
+		<style>
+
+		</style>
+			<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="js/fm.validator.jquery.js"></script>
+		<script src="js/mail.js"></script>
+		<script>
+			$(function () {
+				Validator.language = 'en';
+			});
+		</script>
+		<style>
+			label {
+				display: block;
+				float: left;
+				clear: left;
+				margin: 5px;
+				width: 200px;
+				text-align: right;
+			}
+			input {
+				float: left;
+				clear: right;
+				margin: 5px;
+			}
+			button {
+				clear: both;
+				display: block;
+				margin-left: 210px;
+				margin-top: 5px;
+			}
+			.validator-error {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+	<form class="validator" action="#">
+		<label for="firstName">First Name</label>
+		<input data-required type="text" id="firstName">
+		<label for="lastName">Last Name</label>
+		<input data-required data-min="3" data-max="20" type="text" id="lastName">
+		<label for="age">Age</label>
+		<input data-required data-type="digits" data-min="1" data-max="2" type="text" id="age">
+		<button type="submit">Submit</button>
+	</form>
+
+	</body>
+</html>
