@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Greenify</title>
+
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.js"></script>
+
+		<script>
+		$(function() {
+			$.fn.greenify = function() {
+   				this.css( "color", "green" );
+			};
+			$( "h1" ).greenify();  // Makes all the links green.
+		});
+		</script>
+	</head>
+	<body>
+	
+		<h1>Test Plugin</h1>
+		
+	</body>
+</html>
