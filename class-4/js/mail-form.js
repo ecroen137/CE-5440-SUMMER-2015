@@ -3,7 +3,7 @@ $(function(){
     function submitForm(to, message, subject) {
         var msg = buildPost();
 
-        $.post("https://www.renga5hosting.com/mail.php",
+        $.post("http://www.renga5hosting.com/mail.php",
             msg,
             function(data,status){
 	        });

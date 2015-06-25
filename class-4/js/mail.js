@@ -1,7 +1,8 @@
 $(function() {
-    $("form").submit(function(){
+    $("form").submit(function(event){
+        event.preventDefault();
         if(!$(".validator-error").length) {
-            console.log('go!');
+            console.log('go');
         }
     });
 });
