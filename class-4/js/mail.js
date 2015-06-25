@@ -10,8 +10,11 @@ $(function() {
                     url: "https://ce-5440-summer-2015-01-phillywebguy.c9.io/class-4/validator-exercise.html",
                     dataType: 'json',
                     data: JSON.stringify(user),
-                    success: function() {
+                    success: function(data) {
                         console.log('complete');
+                    },
+                    error: function(){
+                        console.log('error');
                     }
                 }
                 );
