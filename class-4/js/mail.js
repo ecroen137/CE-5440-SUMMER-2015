@@ -2,7 +2,8 @@ $(function() {
     $("form").submit(function(event){
         event.preventDefault();
         if(!$(".validator-error").length) {
-            console.log('go');
+            var user = [$("#firstName").val(), $("#lastName").val()];
+            console.log(JSON.stringify(user));
         }
     });
 });
