@@ -10,6 +10,17 @@
             function AppViewModel() {
                 this.firstName = ko.observable("Bert");
                 this.lastName = ko.observable("Bertington");
+                var self = this;
+                
+                this.fullName = ko.computed(function(){
+                    return self.firstName() + " " + self.lastName();
+                });
+                
+                this.capitalizeLastName = function() {
+                    var currentVal = self.lastName();
+                    self.lastName(currentVal.toUpperCase());
+                }
+                
             }
 
             // Activates knockout.js
@@ -25,6 +36,10 @@
 
 <p>First Name: <input data-bind="value: firstName"></p>
 <p>Last Name: <input data-bind="value: lastName"></p>
+
+<p>Full Name: <strong data-bind="text: fullName"></strong></p>
+
+<button data-bind="click: capitalizeLastName">Go CAPS</button>
     
 </body>
 </html>
