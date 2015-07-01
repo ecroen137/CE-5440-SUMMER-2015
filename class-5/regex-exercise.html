@@ -9,6 +9,15 @@
         -->
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         </script>
+        <script>
+        
+        $(function(){
+            var body = $("body").text();
+            var replace = body.replace(/liberty/g, "LIBERTY");
+            $("body").text(replace);    
+        });
+            
+        </script>
     </head>
     <body>
         
