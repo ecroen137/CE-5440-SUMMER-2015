@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+$(function(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0,0,150,75); 
+    
+    var canvas = document.getElementById("myLine");
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+    
+    var canvas = document.getElementById("myCircle");
+    var ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2*Math.PI);
+    ctx.stroke();
+    
+    var canvas = document.getElementById("myText");
+    var ctx = canvas.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.strokeText("Hello World", 10, 50);
+    
+    
+    
+
+});
+
+</script>
+
+
+</head>
+<body>
+    
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #000000;">
+</canvas>
+
+<canvas id="myLine" width="200" height="100"
+style="border:1px solid #000000;">
+</canvas>
+
+<canvas id="myCircle" width="200" height="100"
+style="border:1px solid #000000;">
+</canvas>
+
+<canvas id="myText" width="200" height="100"
+style="border:1px solid #000000;">
+</canvas>
+    
+</body>
+</html>
