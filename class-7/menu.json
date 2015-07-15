@@ -1,0 +1,7 @@
+{
+    "colors":[{"hover":"red","text":"black","inactive":"blue"}],
+    "sites":[{"site":"Yahoo!","link":"http://www.yahoo.com/"},
+    {"site":"Google","link":"http://www.google.com/"},
+    {"site":"ESPN","link":"http://www.espn.com/"},
+    {"site":"CNN","link":"http://www.cnn.com/"}]
+}
