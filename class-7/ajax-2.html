@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js">
+    </script>
+    <style>
+        .menu-container ul {
+            list-style-type: none;
+        }
+        .menu-container ul li {
+            width: 100px;
+            padding: 5px;
+            border: #000 solid 1px;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="menu-container">
+        
+    </div>    
+    </body>
+    
+    <script>
+    
+        function generateMenu(obj) {
+            
+            var menu = "<ul>";
+            for(var i = 0; i < obj.sites.length; i++){
+                console.log(obj.sites[i].site);
+                menu += "<li><a href='" + obj.sites[i].link + "'>" + obj.sites[i].site + "</a></li>";    
+            }
+            menu += "</ul>"
+            
+            $(".menu-container").html(menu);
+            
+            $(".menu-container ul li").css({
+                color: obj.colors.text
+            });
+            $(".menu-container ul li").mouseover(function(){
+                $(this).css("background-color", obj.colors[0].hover);
+            });
+            $(".menu-container ul li").mouseout(function(){
+                $(this).css("background-color", "#fff");
+            });
+        }
+    
+        $.get("menu.json", function(data){
+            generateMenu(data);    
+        });
+    </script>
+</html>

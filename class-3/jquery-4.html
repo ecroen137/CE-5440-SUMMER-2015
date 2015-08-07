@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>the title</title>
+   <script type="text/javascript" 
+   src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" language="javascript">
+
+   $(document).ready(function() {
+      $(".title").addClass("selected");
+      $("#content").addClass("highlight");
+   });
+
+   </script>
+   <style>
+      .selected { color: red; }
+      .highlight { background: yellow; }
+  </style>
+</head>
+<body>
+   <div class="title">This is a title or something.</div>
+   <p id="content">This is content or something.</p>
+</body>
+</html>

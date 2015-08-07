@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <script type="text/javascript" 
+   src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script>
+
+   $(document).ready(function() {
+      
+      $("button").click(function() {
+          var myValue = Number($(".myTextInput1").val()) + Number($(".myTextInput2").val());
+          $(".myTextOutput").html(myValue);
+      });
+      
+   });
+
+   </script>
+        
+    </head>
+    <body>
+       
+       My First Number: <input type="text" class='myTextInput1'>
+       <br>My Second Number: <input type="text" class='myTextInput2'>
+       <p>
+         Sum: <div class='myTextOutput'>
+             
+         </div>
+         
+       </p>
+       <button>Calculate</button>
+       
+        
+    </body>
+</html>

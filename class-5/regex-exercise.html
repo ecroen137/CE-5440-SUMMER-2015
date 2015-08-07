@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <!--
+            1) Write code that will query DOM and obtain text from BODY
+            2) Search for "liberty" string 
+            3) Replace "liberty" with "LIBERTY"
+            4) Write the new text back to <BODY>
+        
+        -->
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        </script>
+        <script>
+        
+        $(function(){
+            var body = $("body").text();
+            var replace = body.replace(/liberty/g, "LIBERTY");
+            $("body").text(replace);    
+        });
+            
+        </script>
+    </head>
+    <body>
+        
+     We the people of the United States, in order to form a more perfect union, 
+establish justice, insure domestic tranquility, provide for the common defense, 
+promote the general welfare, and secure the blessings of liberty to ourselves 
+and our posterity, do ordain and establish this Constitution for the United States 
+of America.   
+    </body>
+</html>
+
+
